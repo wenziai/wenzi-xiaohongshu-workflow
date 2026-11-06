@@ -4,7 +4,7 @@
 
 > 文子的小红书 Agent Skills：让 Agent 帮你跑完整套小红书冷启动，从定位、选题、改稿、图文规划，到发布排期和数据复盘。
 
-这不是“再写一篇小红书文案”的提示词合集，而是一套可以安装到 **Codex / Claude Code / Cursor 及其他支持 Agent Skills 的工具** 的内容运营工作流。
+这不是“再写一篇小红书文案”的提示词合集，而是一套可以安装到 **Codex / Claude Code / Cursor / WorkBuddy / 豆包工作及其他支持 Agent Skills 的工具** 的内容运营工作流。
 
 你只需要告诉 Agent：
 
