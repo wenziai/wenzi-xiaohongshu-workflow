@@ -1,6 +1,6 @@
 # 文子的小红书工作流
 
-![文子的小红书从 0 到 1000 内容运营工作流](./assets/hero-xhs-workflow.png)
+![文子的小红书工作流：从定位到复盘的六个 Agent Skills](./assets/hero-xhs-workflow.png)
 
 > 文子的小红书 Agent Skills：让 Agent 帮你跑完整套小红书冷启动，从定位、选题、改稿、图文规划，到发布排期和数据复盘。
 
@@ -48,7 +48,7 @@ cp -R xhs-* ~/.claude/skills/
 # 其他支持 Agent Skills 的工具：复制到对应 skills 目录后重启
 ```
 
-完成后重启对应应用。方法本身只依赖 `SKILL.md`，不依赖 WorkBuddy、Bard、Gemini 或其他单一工具。
+完成后重启对应应用。将 `SKILL.md` 放入支持 Agent Skills 的工作台即可使用。
 
 ### 2. 直接说人话，不必记 Skill 名
 
