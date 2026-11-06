@@ -30,7 +30,7 @@ V1_cross_domain:
   passed: true
   evidence:
     - 文章单独给出搜索、排序、筛选、改写四步
-    - 后文要求把 5-10 篇样本交给 WorkBuddy 拆规律
+    - 后文要求把 5-10 篇样本交给 Agent 拆规律
 V2_predictive_power:
   passed: true
   novel_question: "新手做职场成长号没有素材，应该先看大号还是低粉爆款？"
@@ -40,11 +40,11 @@ V3_exclusivity:
   why_not_common: "不是泛泛参考竞品，而是用低粉高数据样本降低粉丝基础干扰。"
 ```
 
-## F03 WorkBuddy 账号档案
+## F03 账号档案
 
 ```yaml
 id: F03
-title: WorkBuddy 账号档案
+title: 账号档案
 type: principle
 V1_cross_domain:
   passed: true

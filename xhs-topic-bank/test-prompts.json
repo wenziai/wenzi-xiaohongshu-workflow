@@ -1,7 +1,7 @@
 {
-  "skill": "wb-xhs-topic-bank",
+  "skill": "xhs-topic-bank",
   "version": "0.1.0",
-  "source_book": "别不信！ WorkBuddy 就可以把你的小红书从0粉干到1000 — 文子 + yanliudreamer 小红书系列",
+  "source_book": "别不信！WorkBuddy 就可以把你的小红书从0粉干到1000 — 文子 + yanliudreamer 小红书系列",
   "darwin_compatible": true,
   "test_cases": [
     {
@@ -36,21 +36,21 @@
       "id": "should-not-trigger-01",
       "type": "should_not_trigger",
       "prompt": "帮我把这篇笔记改得更像真人。",
-      "expected_behavior": "不应激活本 skill，应激活 wb-xhs-humanize-compliance。",
+      "expected_behavior": "不应激活本 skill，应激活 xhs-humanize-compliance。",
       "notes": "正文改稿。"
     },
     {
       "id": "should-not-trigger-02",
       "type": "should_not_trigger",
       "prompt": "我这周要周一三五发，帮我排一下时间。",
-      "expected_behavior": "不应激活本 skill，应激活 wb-xhs-schedule-review。",
+      "expected_behavior": "不应激活本 skill，应激活 xhs-schedule-review。",
       "notes": "兄弟 skill 混淆测试。"
     },
     {
       "id": "edge-01",
       "type": "edge_case",
       "prompt": "帮我出 50 个小红书标题，我还没想好给谁看。",
-      "expected_behavior": "不应直接生成，应先追问目标用户或转 wb-xhs-monetization-backsolve。",
+      "expected_behavior": "不应直接生成，应先追问目标用户或转 xhs-monetization-backsolve。",
       "notes": "定位缺失。"
     },
     {

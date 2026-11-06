@@ -1,13 +1,13 @@
 {
-  "skill": "wb-xhs-account-profile",
+  "skill": "xhs-account-profile",
   "version": "0.1.0",
-  "source_book": "别不信！ WorkBuddy 就可以把你的小红书从0粉干到1000 — 文子 + yanliudreamer 小红书系列",
+  "source_book": "别不信！WorkBuddy 就可以把你的小红书从0粉干到1000 — 文子 + yanliudreamer 小红书系列",
   "darwin_compatible": true,
   "test_cases": [
     {
       "id": "should-trigger-01",
       "type": "should_trigger",
-      "prompt": "帮我建一个小红书账号档案，让 WorkBuddy 以后记住我的定位和语气。",
+      "prompt": "帮我建一个小红书账号档案，让 Agent 以后记住我的定位和语气。",
       "expected_behavior": "应激活本 skill，收集字段并输出账号档案。",
       "notes": "典型账号记忆场景。"
     },
@@ -36,14 +36,14 @@
       "id": "should-not-trigger-01",
       "type": "should_not_trigger",
       "prompt": "帮我找 10 个低粉爆款对标。",
-      "expected_behavior": "不应激活本 skill，应激活 wb-xhs-low-follower-pattern。",
+      "expected_behavior": "不应激活本 skill，应激活 xhs-low-follower-pattern。",
       "notes": "样本拆解场景。"
     },
     {
       "id": "should-not-trigger-02",
       "type": "should_not_trigger",
       "prompt": "我想做小红书，但完全不知道怎么变现。",
-      "expected_behavior": "不应激活本 skill，应激活 wb-xhs-monetization-backsolve。",
+      "expected_behavior": "不应激活本 skill，应激活 xhs-monetization-backsolve。",
       "notes": "兄弟 skill 混淆测试。"
     },
     {

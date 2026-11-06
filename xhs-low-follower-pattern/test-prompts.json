@@ -1,7 +1,7 @@
 {
-  "skill": "wb-xhs-low-follower-pattern",
+  "skill": "xhs-low-follower-pattern",
   "version": "0.1.0",
-  "source_book": "别不信！ WorkBuddy 就可以把你的小红书从0粉干到1000 — 文子 + yanliudreamer 小红书系列",
+  "source_book": "别不信！WorkBuddy 就可以把你的小红书从0粉干到1000 — 文子 + yanliudreamer 小红书系列",
   "darwin_compatible": true,
   "test_cases": [
     {
@@ -36,14 +36,14 @@
       "id": "should-not-trigger-01",
       "type": "should_not_trigger",
       "prompt": "我还不知道做哪个赛道，帮我想想小红书定位。",
-      "expected_behavior": "不应激活本 skill，应激活 wb-xhs-monetization-backsolve。",
+      "expected_behavior": "不应激活本 skill，应激活 xhs-monetization-backsolve。",
       "notes": "定位未完成。"
     },
     {
       "id": "should-not-trigger-02",
       "type": "should_not_trigger",
       "prompt": "帮我把这周 5 个选题排到日历里。",
-      "expected_behavior": "不应激活本 skill，应激活 wb-xhs-schedule-review。",
+      "expected_behavior": "不应激活本 skill，应激活 xhs-schedule-review。",
       "notes": "兄弟 skill 混淆测试。"
     },
     {

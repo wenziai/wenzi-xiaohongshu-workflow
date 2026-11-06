@@ -1,5 +1,5 @@
 ---
-name: wb-xhs-topic-bank
+name: xhs-topic-bank
 description: |
   Use when the user has positioning and wants a reusable Xiaohongshu topic/title bank instead of asking AI to freely brainstorm, especially to map topics to user needs such as emotional resonance, growth proof, new insight, learning value, or identity expression. Trigger phrases: "选题库", "标题公式", "每天发什么", "批量选题", "爆款需求", "XHS topic bank", "title formulas". Do not use before account positioning and target audience are known.
 ---
@@ -22,7 +22,7 @@ description: |
 
 每种类型都有不同作用。痛点型负责命中问题，数字型负责制造清晰感，对比型负责凸显变化，稀缺型负责制造注意力，共鸣型负责建立信任，资源型负责提高收藏，反常识型负责制造转发理由。
 
-WorkBuddy 不应该自由发挥，而应该在账号档案和对标公式约束下，按类型生成可筛选的选题。
+Agent 不应该自由发挥，而应该在账号档案和对标公式约束下，按类型生成可筛选的选题。
 
 yanliudreamer 系列补充了“选题需求层”：一条内容要先回答三问：解决了谁的问题、用户为什么点进来、看完能带走什么。标题公式只是入口，真正决定放大的，是这条内容满足了情感共鸣、见证成长、获得新知、学习提升、身份表达中的哪一种底层需求。
 
@@ -35,7 +35,7 @@ xhs-visual-director-skill 补充了“标题必须能变成封面”的要求：
 ### 案例 1: 七类方向各出多个选题
 
 - **问题**: 新手每天不知道发什么。
-- **方法论的使用**: 作者让 WorkBuddy 按七种标题方向，每类生成多条选题。
+- **方法论的使用**: 作者让 Agent 按七种标题方向，每类生成多条选题。
 - **结论**: 一次生成一组选题，而不是每天临时想一条。
 - **结果**: 一周内容素材可以被快速筛出。
 
@@ -61,8 +61,8 @@ xhs-visual-director-skill 补充了“标题必须能变成封面”的要求：
 
 ### 与相邻 skill 的区分
 
-- 与 `wb-xhs-low-follower-pattern` 的区别: 低粉爆款 skill 负责从样本拆公式；本 skill 负责用公式生产新题。
-- 与 `wb-xhs-humanize-compliance` 的区别: 本 skill 只产出题目和标题，后者处理正文初稿。
+- 与 `xhs-low-follower-pattern` 的区别: 低粉爆款 skill 负责从样本拆公式；本 skill 负责用公式生产新题。
+- 与 `xhs-humanize-compliance` 的区别: 本 skill 只产出题目和标题，后者处理正文初稿。
 
 ## E — 可执行步骤
 
@@ -127,9 +127,9 @@ xhs-visual-director-skill 补充了“标题必须能变成封面”的要求：
 
 ## 相关 skills
 
-- depends-on: [wb-xhs-account-profile, wb-xhs-low-follower-pattern]
+- depends-on: [xhs-account-profile, xhs-low-follower-pattern]
 - contrasts-with: []
-- composes-with: [wb-xhs-humanize-compliance, wb-xhs-schedule-review]
+- composes-with: [xhs-humanize-compliance, xhs-schedule-review]
 
 ## 审计信息
 

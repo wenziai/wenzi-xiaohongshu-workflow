@@ -1,5 +1,5 @@
 ---
-name: wb-xhs-humanize-compliance
+name: xhs-humanize-compliance
 description: |
   Use when the user has an AI-generated Xiaohongshu draft and wants it to sound more personal, concrete, platform-appropriate, and stronger in hook, retention, and interaction value. Trigger phrases: "去 AI 味", "不像我", "合规检查", "改得像真人", "开头不抓人", "没停留", "humanize draft", "platform check". Do not use for initial positioning or topic generation.
 ---
@@ -61,8 +61,8 @@ xhs-visual-director-skill 补充了“图文可读性检查”：改稿时要判
 
 ### 与相邻 skill 的区分
 
-- 与 `wb-xhs-topic-bank` 的区别: 选题库产出标题和方向，本 skill 处理已有正文。
-- 与 `wb-xhs-account-profile` 的区别: 账号档案定义语气，本 skill 按语气改稿。
+- 与 `xhs-topic-bank` 的区别: 选题库产出标题和方向，本 skill 处理已有正文。
+- 与 `xhs-account-profile` 的区别: 账号档案定义语气，本 skill 按语气改稿。
 
 ## E — 可执行步骤
 
@@ -136,9 +136,9 @@ xhs-visual-director-skill 补充了“图文可读性检查”：改稿时要判
 
 ## 相关 skills
 
-- depends-on: [wb-xhs-account-profile, wb-xhs-topic-bank]
+- depends-on: [xhs-account-profile, xhs-topic-bank]
 - contrasts-with: []
-- composes-with: [wb-xhs-schedule-review]
+- composes-with: [xhs-schedule-review]
 
 ## 审计信息
 

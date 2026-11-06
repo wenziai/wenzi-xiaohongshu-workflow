@@ -1,5 +1,5 @@
 ---
-name: wb-xhs-schedule-review
+name: xhs-schedule-review
 description: |
   Use when the user wants a Xiaohongshu posting calendar, weekly review board, first-10-post launch plan, 10-20-post positioning test, or data-based next-step plan. Trigger phrases: "排期", "复盘", "30 天计划", "前10条", "10-20条测试", "发了没数据", "weekly review", "content calendar", "XHS schedule". Do not use for first-draft editing or initial account positioning.
 ---
@@ -20,7 +20,7 @@ description: |
 
 小红书冷启动不是单篇内容问题，而是连续发布和反馈问题。排期解决“今天发什么、什么时候发、发哪类”；复盘解决“数据说明了什么、下一周怎么改”。
 
-文章建议把新号分成阶段：先让账号行为自然，再让平台识别标签，再逐渐稳定内容和商业转化。每周记录曝光、点击、点赞、收藏、评论、分享、涨粉等指标，并让 WorkBuddy 把结论写回记忆。
+文章建议把新号分成阶段：先让账号行为自然，再让平台识别标签，再逐渐稳定内容和商业转化。每周记录曝光、点击、点赞、收藏、评论、分享、涨粉等指标，并让 Agent 把结论写回记忆。
 
 yanliudreamer 系列补充了冷启动实验节奏：前 10 条是系统画像建立期，建议组合自我背景/经历、方法/经验、踩坑/反思、情绪/观点；定位不要只靠想，而要用 10-20 条内容验证。复盘时不要只问“爆没爆”，而要判断系统是否认识你、哪类内容更容易被推荐、哪类内容更容易被互动和关注。
 
@@ -35,7 +35,7 @@ xhs-visual-director-skill 补充了图文生产节奏：排期不只安排发什
 ### 案例 1: 30 天三阶段排期
 
 - **问题**: 新手日更最大障碍不是没内容，而是不知道节奏。
-- **方法论的使用**: 作者建议让 WorkBuddy 生成 30 天阶段计划和每周数据看板。
+- **方法论的使用**: 作者建议让 Agent 生成 30 天阶段计划和每周数据看板。
 - **结论**: 发布前能知道当天任务，发布后能知道下周调整。
 - **结果**: 选题库、数据和记忆文件形成闭环。
 
@@ -46,7 +46,7 @@ xhs-visual-director-skill 补充了图文生产节奏：排期不只安排发什
 1. 用户有选题库，但不知道如何排一周或一个月。
 2. 用户发了几篇后不知道数据该怎么解释。
 3. 用户想从冷启动进入稳定更新。
-4. 用户想让 WorkBuddy 记住每周复盘规律。
+4. 用户想让 Agent 记住每周复盘规律。
 5. 用户刚开号，想设计前 10 条内容。
 6. 用户发了 10-20 条，想根据数据收敛定位。
 
@@ -62,8 +62,8 @@ xhs-visual-director-skill 补充了图文生产节奏：排期不只安排发什
 
 ### 与相邻 skill 的区分
 
-- 与 `wb-xhs-topic-bank` 的区别: 选题库负责产生候选内容，本 skill 负责安排节奏和复盘数据。
-- 与 `wb-xhs-humanize-compliance` 的区别: 去 AI 味处理单篇发布质量，本 skill 处理多篇内容的周期表现。
+- 与 `xhs-topic-bank` 的区别: 选题库负责产生候选内容，本 skill 负责安排节奏和复盘数据。
+- 与 `xhs-humanize-compliance` 的区别: 去 AI 味处理单篇发布质量，本 skill 处理多篇内容的周期表现。
 
 ## E — 可执行步骤
 
@@ -128,9 +128,9 @@ xhs-visual-director-skill 补充了图文生产节奏：排期不只安排发什
 
 ## 相关 skills
 
-- depends-on: [wb-xhs-topic-bank, wb-xhs-humanize-compliance]
+- depends-on: [xhs-topic-bank, xhs-humanize-compliance]
 - contrasts-with: []
-- composes-with: [wb-xhs-topic-bank, wb-xhs-account-profile]
+- composes-with: [xhs-topic-bank, xhs-account-profile]
 
 ## 审计信息
 

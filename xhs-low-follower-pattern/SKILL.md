@@ -1,5 +1,5 @@
 ---
-name: wb-xhs-low-follower-pattern
+name: xhs-low-follower-pattern
 description: |
   Use when the user has a Xiaohongshu niche and needs to find, compare, and extract reusable content structures from low-follower high-performing posts, or diagnose why a post did or did not become a breakout using click rate, retention, and interaction signals. Trigger phrases: "找对标", "低粉爆款", "拆爆款", "内容骨架", "点击率", "停留时长", "互动率", "competitor pattern", "viral post structure". Do not use before the monetization direction is clear.
 ---
@@ -37,7 +37,7 @@ xhs-visual-director-skill 补充了视觉拆解维度：低粉高数据样本不
 - **问题**: 默认搜索结果容易被旧爆款和大号占据。
 - **方法论的使用**: 作者建议输入赛道核心词后看较新的高数据内容。
 - **结论**: 新近跑出的低粉高数据内容更适合新号学习。
-- **结果**: WorkBuddy 可以基于多个样本总结内容公式。
+- **结果**: Agent 可以基于多个样本总结内容公式。
 
 ## A2 — 触发场景
 
@@ -61,8 +61,8 @@ xhs-visual-director-skill 补充了视觉拆解维度：低粉高数据样本不
 
 ### 与相邻 skill 的区分
 
-- 与 `wb-xhs-monetization-backsolve` 的区别: 本 skill 不判断赛道值不值得做，只拆已选赛道的内容样本。
-- 与 `wb-xhs-topic-bank` 的区别: 本 skill 从外部样本提取公式；选题库 skill 用公式生成新选题。
+- 与 `xhs-monetization-backsolve` 的区别: 本 skill 不判断赛道值不值得做，只拆已选赛道的内容样本。
+- 与 `xhs-topic-bank` 的区别: 本 skill 从外部样本提取公式；选题库 skill 用公式生成新选题。
 
 ## E — 可执行步骤
 
@@ -132,9 +132,9 @@ xhs-visual-director-skill 补充了视觉拆解维度：低粉高数据样本不
 
 ## 相关 skills
 
-- depends-on: [wb-xhs-monetization-backsolve]
+- depends-on: [xhs-monetization-backsolve]
 - contrasts-with: []
-- composes-with: [wb-xhs-topic-bank, wb-xhs-account-profile]
+- composes-with: [xhs-topic-bank, xhs-account-profile]
 
 ## 审计信息
 

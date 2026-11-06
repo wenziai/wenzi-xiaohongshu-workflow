@@ -1,10 +1,10 @@
 # 文子的小红书工作流
 
-![文子的小红书从 0 到 1000 内容运营工作流](./assets/hero-workbuddy-xhs.png)
+![文子的小红书从 0 到 1000 内容运营工作流](./assets/hero-xhs-workflow.png)
 
 > 文子的小红书 Agent Skills：让 Agent 帮你跑完整套小红书冷启动，从定位、选题、改稿、图文规划，到发布排期和数据复盘。
 
-这不是“再写一篇小红书文案”的提示词合集，而是一套可以安装到 **Codex / Claude / WorkBuddy** 的内容运营工作流。
+这不是“再写一篇小红书文案”的提示词合集，而是一套可以安装到 **Codex / Claude Code / Cursor 及其他支持 Agent Skills 的工具** 的内容运营工作流。
 
 你只需要告诉 Agent：
 
@@ -36,19 +36,19 @@
 
 ### 1. 安装
 
-复制 6 个 Skill 目录到 Codex：
+这套 Skill 不绑定某一个 AI 产品。把 6 个 `xhs-*` 目录复制到你正在用的 Agent 的 skills 目录即可：
 
 ```bash
-cp -R wb-xhs-* ~/.codex/skills/
+# Codex
+cp -R xhs-* ~/.codex/skills/
+
+# Claude Code
+cp -R xhs-* ~/.claude/skills/
+
+# 其他支持 Agent Skills 的工具：复制到对应 skills 目录后重启
 ```
 
-Claude Code 用户可复制到：
-
-```bash
-cp -R wb-xhs-* ~/.claude/skills/
-```
-
-完成后重启对应应用。
+完成后重启对应应用。方法本身只依赖 `SKILL.md`，不依赖 WorkBuddy、Bard、Gemini 或其他单一工具。
 
 ### 2. 直接说人话，不必记 Skill 名
 
@@ -110,43 +110,42 @@ cp -R wb-xhs-* ~/.claude/skills/
 
 | 你现在的问题 | Skill | 核心交付 |
 |---|---|---|
-| 不知道做什么账号，也不知道未来卖什么 | `wb-xhs-monetization-backsolve` | 变现路径、定位卡、内容矩阵、10–20 条验证计划 |
-| 每次让 AI 写内容，都不像你本人 | `wb-xhs-account-profile` | 账号档案、语言样本、可信主张、内容与视觉边界 |
-| 想拆低粉高数据样本为什么有效 | `wb-xhs-low-follower-pattern` | 样本筛选、点击/停留/互动诊断、可迁移结构 |
-| 缺选题、标题和封面钩子 | `wb-xhs-topic-bank` | 35+ 选题、标题公式、封面方向、发布优先级 |
-| 初稿太顺、太空、太像模板 | `wb-xhs-humanize-compliance` | AI 味诊断、真人化改稿、发布检查、图文拆页 |
-| 不知道前 10 条怎么发，或发完不会复盘 | `wb-xhs-schedule-review` | 发布排期、数据看板、定位复盘、下周实验 |
+| 不知道做什么账号，也不知道未来卖什么 | `xhs-monetization-backsolve` | 变现路径、定位卡、内容矩阵、10–20 条验证计划 |
+| 每次让 AI 写内容，都不像你本人 | `xhs-account-profile` | 账号档案、语言样本、可信主张、内容与视觉边界 |
+| 想拆低粉高数据样本为什么有效 | `xhs-low-follower-pattern` | 样本筛选、点击/停留/互动诊断、可迁移结构 |
+| 缺选题、标题和封面钩子 | `xhs-topic-bank` | 35+ 选题、标题公式、封面方向、发布优先级 |
+| 初稿太顺、太空、太像模板 | `xhs-humanize-compliance` | AI 味诊断、真人化改稿、发布检查、图文拆页 |
+| 不知道前 10 条怎么发，或发完不会复盘 | `xhs-schedule-review` | 发布排期、数据看板、定位复盘、下周实验 |
 
 ## 三种推荐工作流
 
 ### 从 0 开始做新号
 
 ```text
-wb-xhs-monetization-backsolve
-→ wb-xhs-account-profile
-→ wb-xhs-schedule-review
-→ wb-xhs-topic-bank
-→ wb-xhs-humanize-compliance
-→ wb-xhs-low-follower-pattern
-→ wb-xhs-schedule-review
+xhs-monetization-backsolve
+→ xhs-account-profile
+→ xhs-low-follower-pattern
+→ xhs-topic-bank
+→ xhs-humanize-compliance
+→ xhs-schedule-review
 ```
 
 ### 已有账号重新梳理
 
 ```text
-wb-xhs-schedule-review
-→ wb-xhs-monetization-backsolve
-→ wb-xhs-account-profile
-→ wb-xhs-low-follower-pattern
-→ wb-xhs-topic-bank
+xhs-schedule-review
+→ xhs-monetization-backsolve
+→ xhs-account-profile
+→ xhs-low-follower-pattern
+→ xhs-topic-bank
 ```
 
 ### 单篇内容优化
 
 ```text
-wb-xhs-topic-bank
-→ wb-xhs-humanize-compliance
-→ wb-xhs-low-follower-pattern
+xhs-topic-bank
+→ xhs-humanize-compliance
+→ xhs-low-follower-pattern
 ```
 
 ## 设计原则
@@ -186,12 +185,12 @@ wb-xhs-topic-bank
 ├── verified.md
 ├── candidates/
 ├── rejected/
-├── wb-xhs-monetization-backsolve/
-├── wb-xhs-low-follower-pattern/
-├── wb-xhs-account-profile/
-├── wb-xhs-topic-bank/
-├── wb-xhs-humanize-compliance/
-└── wb-xhs-schedule-review/
+├── xhs-monetization-backsolve/
+├── xhs-low-follower-pattern/
+├── xhs-account-profile/
+├── xhs-topic-bank/
+├── xhs-humanize-compliance/
+└── xhs-schedule-review/
 ```
 
 每个 Skill 目录包含：
@@ -213,7 +212,7 @@ wb-xhs-topic-bank
 
 项目以文子的 X Article《别不信！WorkBuddy 就可以把你的小红书从 0 粉干到 1000》为冷启动主线，并融合：
 
-- [原始 WorkBuddy 文章](https://x.com/Eejoylove/status/2074028317498601870)
+- [原始 X Article](https://x.com/Eejoylove/status/2074028317498601870)
 - yanliudreamer 小红书系列中的起号、个人 IP、内容验证和长期增长方法
 - [dontbesilent2025/dbskill](https://github.com/dontbesilent2025/dbskill/tree/main) 中适合小红书运营的标题、内容诊断、对标、共鸣、开头、文风和复盘模块
 - [ziguishian/xhs-visual-director-skill](https://github.com/ziguishian/xhs-visual-director-skill) 中适合图文内容的视觉导演方法

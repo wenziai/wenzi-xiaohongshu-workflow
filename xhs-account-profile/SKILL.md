@@ -1,10 +1,10 @@
 ---
-name: wb-xhs-account-profile
+name: xhs-account-profile
 description: |
-  Use when the user wants WorkBuddy or another agent to remember an account's positioning, voice, boundaries, data, trust assets, personal IP story, and content rules across sessions. Trigger phrases: "账号档案", "记住我的账号", "写入记忆", "人设垂直", "信任名片", "brand profile", "account memory", "style guide". Do not use for one-off post drafting unless profile data is missing.
+  Use when the user wants an agent to remember an account's positioning, voice, boundaries, data, trust assets, personal IP story, and content rules across sessions. Trigger phrases: "账号档案", "记住我的账号", "写入记忆", "人设垂直", "信任名片", "brand profile", "account memory", "style guide". Do not use for one-off post drafting unless profile data is missing.
 ---
 
-# WorkBuddy 账号档案构建
+# 账号档案构建
 
 ## R — 原文
 
@@ -18,7 +18,7 @@ description: |
 
 ## I — 方法论骨架
 
-WorkBuddy 的价值不只是回答一次问题，而是长期协作。长期协作的前提是它知道账号是谁、说什么、不说什么、为什么可信、已经验证过什么。
+Agent 的价值不只是回答一次问题，而是长期协作。长期协作的前提是它知道账号是谁、说什么、不说什么、为什么可信、已经验证过什么。
 
 账号档案要把定位、变现模式、人设语气、内容边界、已有数据和对标公式写成可读取文件。这样每次生成选题、标题、正文或复盘时，Agent 不必重新猜测用户身份。
 
@@ -34,9 +34,9 @@ xhs-visual-director-skill 补充了“视觉身份档案”：账号档案不仅
 
 ### 案例 1: 文科生使用 AI 的示范定位
 
-- **问题**: 作者需要示范一个可被 WorkBuddy 理解的账号身份。
+- **问题**: 作者需要示范一个可被 Agent 理解的账号身份。
 - **方法论的使用**: 用“账号定位、变现模式、人设调性、内容边界、已有数据”等字段描述账号。
-- **结论**: WorkBuddy 能在后续生成中保持更稳定的表达。
+- **结论**: Agent 能在后续生成中保持更稳定的表达。
 - **结果**: 减少反复修改“这不像我”的成本。
 
 ## A2 — 触发场景
@@ -53,7 +53,7 @@ xhs-visual-director-skill 补充了“视觉身份档案”：账号档案不仅
 ### 语言信号
 
 - "帮我建账号档案"
-- "让 WorkBuddy 记住我的定位"
+- "让 Agent 记住我的定位"
 - "这个文案不像我"
 - "帮我整理个人IP"
 - "我的人设怎么垂直"
@@ -62,8 +62,8 @@ xhs-visual-director-skill 补充了“视觉身份档案”：账号档案不仅
 
 ### 与相邻 skill 的区分
 
-- 与 `wb-xhs-monetization-backsolve` 的区别: 定位 skill 产出方向，本 skill 把方向固化成记忆文件。
-- 与 `wb-xhs-topic-bank` 的区别: 本 skill 定义账号约束，选题库在这些约束内生产题目。
+- 与 `xhs-monetization-backsolve` 的区别: 定位 skill 产出方向，本 skill 把方向固化成记忆文件。
+- 与 `xhs-topic-bank` 的区别: 本 skill 定义账号约束，选题库在这些约束内生产题目。
 
 ## E — 可执行步骤
 
@@ -96,7 +96,7 @@ xhs-visual-director-skill 补充了“视觉身份档案”：账号档案不仅
    - 完成标准: 另一个 Agent 只读此文件也能判断该不该写某类内容。
 
 8. **生成记忆写入指令**
-   - 给出可直接对 WorkBuddy 使用的指令，例如“请记住以下账号信息，并在后续内容生成中自动参考”。
+   - 给出可直接对 Agent 使用的指令，例如“请记住以下账号信息，并在后续内容生成中自动参考”。
    - 完成标准: 用户可复制使用。
 
 9. **建立更新机制**
@@ -124,14 +124,14 @@ xhs-visual-director-skill 补充了“视觉身份档案”：账号档案不仅
 
 ### 作者盲点
 
-- WorkBuddy 的实际记忆机制可能随版本变化，文件路径和读取方式需要按当前工具确认。
+- Agent 的实际记忆机制可能随版本变化，文件路径和读取方式需要按当前工具确认。
 - 用户如果没有持续记录习惯，档案会很快失真。
 
 ## 相关 skills
 
-- depends-on: [wb-xhs-monetization-backsolve]
+- depends-on: [xhs-monetization-backsolve]
 - contrasts-with: []
-- composes-with: [wb-xhs-topic-bank, wb-xhs-humanize-compliance, wb-xhs-schedule-review]
+- composes-with: [xhs-topic-bank, xhs-humanize-compliance, xhs-schedule-review]
 
 ## 审计信息
 

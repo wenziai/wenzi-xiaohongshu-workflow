@@ -1,6 +1,6 @@
 # Pipeline State
 
-- Source: X Article, "别不信！ WorkBuddy 就可以把你的小红书从0粉干到1000"
+- Source: X Article, "别不信！WorkBuddy 就可以把你的小红书从0粉干到1000"
 - Author: 文子 (@Eejoylove)
 - Published: 2026-07-06
 - Current stage: Stage 5 complete
@@ -17,10 +17,10 @@
 
 ## Skills Produced
 
-- `wb-xhs-monetization-backsolve`
-- `wb-xhs-low-follower-pattern`
-- `wb-xhs-account-profile`
-- `wb-xhs-topic-bank`
-- `wb-xhs-humanize-compliance`
-- `wb-xhs-schedule-review`
+- `xhs-monetization-backsolve`
+- `xhs-low-follower-pattern`
+- `xhs-account-profile`
+- `xhs-topic-bank`
+- `xhs-humanize-compliance`
+- `xhs-schedule-review`
 

@@ -1,10 +1,10 @@
-# 融合说明: WorkBuddy 小红书 Skill × yanliudreamer 小红书系列 × dbskill 方法模块 × 视觉导演模块
+# 融合说明: 小红书 Skill × yanliudreamer 小红书系列 × dbskill 方法模块 × 视觉导演模块
 
 更新时间: 2026-07-07
 
 ## 新增阅读来源
 
-本次在原 WorkBuddy 小红书冷启动 Skill 基础上，补充读取并融合了 yanliudreamer 的 4 篇 X Article:
+本次在原 小红书冷启动 Skill 基础上，补充读取并融合了 yanliudreamer 的 4 篇 X Article:
 
 - [小红书起号(上)：从0-20万粉，有关流量，账号定位，涨粉，选题](https://x.com/yanliudreamer/status/2063422060123320432)
 - [小红书运营 (下)：0-20万粉，有关变现，个人IP，长期主义](https://x.com/yanliudreamer/status/2064531701783732656)
@@ -19,7 +19,7 @@
 
 - [dontbesilent2025/dbskill](https://github.com/dontbesilent2025/dbskill/tree/main)
 
-提取方式不是合并项目，而是把 `dbs-xhs-title`、`dbs-content`、`dbs-benchmark`、`dbs-resonate`、`dbs-spread`、`dbs-hook`、`dbs-ai-check` 以及状态记录思路，转译为现有 `wb-xhs-*` skills 的检查项和输出字段。
+提取方式不是合并项目，而是把 `dbs-xhs-title`、`dbs-content`、`dbs-benchmark`、`dbs-resonate`、`dbs-spread`、`dbs-hook`、`dbs-ai-check` 以及状态记录思路，转译为现有 `xhs-*` skills 的检查项和输出字段。
 
 本次还提取了 xhs-visual-director-skill 中适合本项目的视觉导演模块:
 
@@ -29,7 +29,7 @@
 
 ## 取长补短
 
-原 WorkBuddy Skill 的优势:
+原 本 Skill 的优势:
 
 - 更工程化: 适合沉淀成 Agent 可执行的步骤。
 - 更商业闭环: 从变现路径倒推账号定位。
@@ -66,7 +66,7 @@ Timing 判断是否值得现在做
 
 ## Skill 更新摘要
 
-### wb-xhs-monetization-backsolve
+### xhs-monetization-backsolve
 
 新增:
 
@@ -77,7 +77,7 @@ Timing 判断是否值得现在做
 
 核心变化: 不再只问“怎么变现”，还要问“为什么现在做、为什么是你、你能不能长期讲下去”。
 
-### wb-xhs-low-follower-pattern
+### xhs-low-follower-pattern
 
 新增:
 
@@ -89,7 +89,7 @@ Timing 判断是否值得现在做
 
 核心变化: 不再只拆外部样本结构，还要判断内容到底强在哪个数据环节。
 
-### wb-xhs-account-profile
+### xhs-account-profile
 
 新增:
 
@@ -101,7 +101,7 @@ Timing 判断是否值得现在做
 
 核心变化: 账号档案不只是风格指南，而是“信任名片”。
 
-### wb-xhs-topic-bank
+### xhs-topic-bank
 
 新增:
 
@@ -117,7 +117,7 @@ Timing 判断是否值得现在做
 
 核心变化: 选题不只按标题公式生成，还要按用户底层需求分层。
 
-### wb-xhs-humanize-compliance
+### xhs-humanize-compliance
 
 新增:
 
@@ -133,7 +133,7 @@ Timing 判断是否值得现在做
 
 核心变化: 去 AI 味不只是变口语，而是同时提升真人感和内容传播力。
 
-### wb-xhs-schedule-review
+### xhs-schedule-review
 
 新增:
 
@@ -152,37 +152,37 @@ Timing 判断是否值得现在做
 新号从零开始:
 
 ```text
-wb-xhs-monetization-backsolve
--> wb-xhs-account-profile
--> wb-xhs-schedule-review
--> wb-xhs-topic-bank
--> wb-xhs-humanize-compliance
--> wb-xhs-low-follower-pattern
--> wb-xhs-schedule-review
+xhs-monetization-backsolve
+-> xhs-account-profile
+-> xhs-schedule-review
+-> xhs-topic-bank
+-> xhs-humanize-compliance
+-> xhs-low-follower-pattern
+-> xhs-schedule-review
 ```
 
 已有账号重新定位:
 
 ```text
-wb-xhs-schedule-review
--> wb-xhs-monetization-backsolve
--> wb-xhs-account-profile
--> wb-xhs-low-follower-pattern
--> wb-xhs-topic-bank
+xhs-schedule-review
+-> xhs-monetization-backsolve
+-> xhs-account-profile
+-> xhs-low-follower-pattern
+-> xhs-topic-bank
 ```
 
 单篇内容优化:
 
 ```text
-wb-xhs-topic-bank
--> wb-xhs-humanize-compliance
--> wb-xhs-low-follower-pattern
+xhs-topic-bank
+-> xhs-humanize-compliance
+-> xhs-low-follower-pattern
 ```
 
 爆款复盘:
 
 ```text
-wb-xhs-low-follower-pattern
--> wb-xhs-schedule-review
--> wb-xhs-account-profile
+xhs-low-follower-pattern
+-> xhs-schedule-review
+-> xhs-account-profile
 ```

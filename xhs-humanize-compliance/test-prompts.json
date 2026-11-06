@@ -1,7 +1,7 @@
 {
-  "skill": "wb-xhs-humanize-compliance",
+  "skill": "xhs-humanize-compliance",
   "version": "0.1.0",
-  "source_book": "别不信！ WorkBuddy 就可以把你的小红书从0粉干到1000 — 文子 + yanliudreamer 小红书系列",
+  "source_book": "别不信！WorkBuddy 就可以把你的小红书从0粉干到1000 — 文子 + yanliudreamer 小红书系列",
   "darwin_compatible": true,
   "test_cases": [
     {
@@ -36,14 +36,14 @@
       "id": "should-not-trigger-01",
       "type": "should_not_trigger",
       "prompt": "帮我建 35 个小红书选题。",
-      "expected_behavior": "不应激活本 skill，应激活 wb-xhs-topic-bank。",
+      "expected_behavior": "不应激活本 skill，应激活 xhs-topic-bank。",
       "notes": "选题生产。"
     },
     {
       "id": "should-not-trigger-02",
       "type": "should_not_trigger",
       "prompt": "帮我做一张 30 天发布排期表。",
-      "expected_behavior": "不应激活本 skill，应激活 wb-xhs-schedule-review。",
+      "expected_behavior": "不应激活本 skill，应激活 xhs-schedule-review。",
       "notes": "兄弟 skill 混淆测试。"
     },
     {

@@ -1,7 +1,7 @@
 {
-  "skill": "wb-xhs-monetization-backsolve",
+  "skill": "xhs-monetization-backsolve",
   "version": "0.1.0",
-  "source_book": "别不信！ WorkBuddy 就可以把你的小红书从0粉干到1000 — 文子 + yanliudreamer 小红书系列",
+  "source_book": "别不信！WorkBuddy 就可以把你的小红书从0粉干到1000 — 文子 + yanliudreamer 小红书系列",
   "darwin_compatible": true,
   "test_cases": [
     {
@@ -36,21 +36,21 @@
       "id": "should-not-trigger-01",
       "type": "should_not_trigger",
       "prompt": "帮我把这篇小红书文案去 AI 味。",
-      "expected_behavior": "不应激活本 skill，应激活 wb-xhs-humanize-compliance。",
+      "expected_behavior": "不应激活本 skill，应激活 xhs-humanize-compliance。",
       "notes": "已有正文的改稿场景。"
     },
     {
       "id": "should-not-trigger-02",
       "type": "should_not_trigger",
       "prompt": "我已经确定做 AI 写作教程号了，帮我找低粉爆款对标。",
-      "expected_behavior": "不应激活本 skill，应激活 wb-xhs-low-follower-pattern。",
+      "expected_behavior": "不应激活本 skill，应激活 xhs-low-follower-pattern。",
       "notes": "兄弟 skill 混淆测试。"
     },
     {
       "id": "edge-01",
       "type": "edge_case",
       "prompt": "我想做读书号，先帮我出 30 个选题吧。",
-      "expected_behavior": "如果没有变现路径和目标用户，应先激活本 skill；若用户已提供定位，则转 wb-xhs-topic-bank。",
+      "expected_behavior": "如果没有变现路径和目标用户，应先激活本 skill；若用户已提供定位，则转 xhs-topic-bank。",
       "notes": "选题请求里隐藏定位缺口。"
     },
     {

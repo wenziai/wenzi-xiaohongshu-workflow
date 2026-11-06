@@ -1,5 +1,5 @@
 ---
-name: wb-xhs-monetization-backsolve
+name: xhs-monetization-backsolve
 description: |
   Use when the user wants to start or reposition a Xiaohongshu account but is asking "what should I post" before clarifying monetization, timing, personal IP direction, or trust path. Trigger phrases: "小红书定位", "不知道做什么赛道", "怎么变现", "个人IP", "账号方向", "XHS positioning", "monetization first". Do not use for drafting a specific post; use topic or copy skills after positioning is clear.
 ---
@@ -62,8 +62,8 @@ xhs-visual-director-skill 补充了定位阶段的视觉判断：不同变现路
 
 ### 与相邻 skill 的区分
 
-- 与 `wb-xhs-low-follower-pattern` 的区别: 本 skill 先定商业方向；低粉爆款拆解在方向确定后找样本。
-- 与 `wb-xhs-account-profile` 的区别: 本 skill 产出定位判断；账号档案 skill 把定位写成 WorkBuddy 可复用记忆。
+- 与 `xhs-low-follower-pattern` 的区别: 本 skill 先定商业方向；低粉爆款拆解在方向确定后找样本。
+- 与 `xhs-account-profile` 的区别: 本 skill 产出定位判断；账号档案 skill 把定位写成 Agent 可复用记忆。
 
 ## E — 可执行步骤
 
@@ -122,14 +122,14 @@ xhs-visual-director-skill 补充了定位阶段的视觉判断：不同变现路
 
 ### 作者盲点
 
-- WorkBuddy 原文偏变现倒推，yanliudreamer 系列偏个人 IP 长期主义；两者融合后仍需结合用户目标取舍。
+- 原文偏变现倒推，yanliudreamer 系列偏个人 IP 长期主义；两者融合后仍需结合用户目标取舍。
 - 变现路径和风口判断能提高内容聚焦，但不能保证增长结果。
 
 ## 相关 skills
 
 - depends-on: []
-- contrasts-with: [wb-xhs-topic-bank]
-- composes-with: [wb-xhs-account-profile, wb-xhs-low-follower-pattern]
+- contrasts-with: [xhs-topic-bank]
+- composes-with: [xhs-account-profile, xhs-low-follower-pattern]
 
 ## 审计信息
 

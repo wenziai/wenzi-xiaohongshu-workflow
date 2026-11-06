@@ -16,5 +16,5 @@ Rejected as standalone skills.
 
 ## Use Instead
 
-放入 `wb-xhs-schedule-review` 和 `wb-xhs-account-profile` 的边界提醒。
+放入 `xhs-schedule-review` 和 `xhs-account-profile` 的边界提醒。
 
