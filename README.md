@@ -1,6 +1,6 @@
 # 文子的小红书工作流
 
-![文子的小红书工作流：从定位到复盘的六个 Agent Skills](./assets/hero-xhs-workflow.png)
+![一键搭建小红书新账号，0 到 1000 粉冷启动](./assets/hero-xhs-workflow.png)
 
 > 文子的小红书 Agent Skills：让 Agent 帮你跑完整套小红书冷启动，从定位、选题、改稿、图文规划，到发布排期和数据复盘。
 
