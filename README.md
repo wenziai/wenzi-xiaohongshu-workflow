@@ -234,3 +234,10 @@ xhs-topic-bank
 - 建立可自动执行的触发测试和行为回归测试
 
 欢迎提交 Issue 或 Pull Request，分享真实使用结果和需要补充的场景。
+
+
+## 联系文子
+
+微信扫码联系文子，欢迎交流小红书运营和 AI 工作流。
+
+<img src="assets/wenzi-wechat-qr.jpg" alt="文子的微信二维码" width="240">
